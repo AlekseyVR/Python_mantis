@@ -1,0 +1,11 @@
+{
+  "web": {
+    "baseurl": "http://localhost/mantisbt-2.24.2/my_view_page.php",
+    "username": "admin",
+    "password": "secret"
+  },
+    "webadmin": {
+    "username": "administrator",
+    "password": "secret"
+  }
+}
