@@ -1,8 +1,6 @@
 {
   "web": {
-    "baseurl": "http://localhost/mantisbt-2.24.2/my_view_page.php",
-    "username": "admin",
-    "password": "secret"
+    "baseurl": "http://localhost/mantisbt-1.2.20/my_view_page.php"
   },
     "webadmin": {
     "username": "administrator",
