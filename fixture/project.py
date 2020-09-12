@@ -46,13 +46,12 @@ class ProjectHelper:
         project_list = []
         for row in table_rows:
             element = row.find_elements_by_tag_name("td")
-            id = element[0].find_element_by_tag_name("a").get_attribute("href").replace(
-                "http://localhost/mantisbt-1.2.20/manage_proj_edit_page.php?project_id=", "")
+            id = element[0].find_element_by_tag_name("a").get_attribute("href").replace("http://localhost/mantisbt-1.2.20/manage_proj_edit_page.php?project_id=", "")
             name_project = element[0].find_element_by_tag_name("a").text
             status_project = element[1].text
             view_status_project = element[3].text
             description_project = element[4].text
-            project_list.append(Project(id=id, name_project=name_project, description_project=description_project))
+            project_list.append(Project(id=int(id), name_project=name_project, description_project=description_project))
         return project_list
 
     def delete_project(self, project):

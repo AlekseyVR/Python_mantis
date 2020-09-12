@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.support.select import Select
 from fixture.session import SessionHelper
 from fixture.project import ProjectHelper
+from fixture.soap import SoapHelper
 
 
 class Application:
@@ -18,6 +19,7 @@ class Application:
         self.session = SessionHelper(self)
         self.project = ProjectHelper(self)
         self.base_url = base_url
+        self.soap =SoapHelper(self)
 
     def is_valid(self):
         try:

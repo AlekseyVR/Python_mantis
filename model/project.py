@@ -11,12 +11,11 @@ class Project:
         self.id = id
 
     def __repr__(self):
-        return "%s:%s;%s" % (self.id, self.name_project, self.description_project)
+        return "%s:%s:%s" % (self.id, self.name_project, self.description_project)
 
     def __eq__(self, other):
         return (self.id is None or other.id is None or self.id == other.id) and self.name_project == other.name_project and \
                self.description_project == other.description_project
-
 
     def id_or_max(self):
         if self.id:
