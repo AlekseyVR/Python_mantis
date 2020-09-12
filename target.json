@@ -5,5 +5,10 @@
     "webadmin": {
     "username": "administrator",
     "password": "secret"
+  },
+  "ftp":{
+    "host": "localhost",
+    "username": "mantis",
+    "password": "mantis"
   }
 }
